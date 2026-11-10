@@ -1,0 +1,36 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "epics-deals",
+  "version": "1.0.0",
+  "description": "LLC costs, EIN timelines, IRS deadlines and filing prices for founders forming US companies.",
+  "author": {
+    "name": "Epics Deals",
+    "email": "info@epicsdeals.com",
+    "url": "https://epicsdeals.com"
+  },
+  "homepage": "https://epicsdeals.com",
+  "keywords": ["llc", "ein", "itin", "us-tax", "business-formation", "non-resident-founders"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Epics Deals — US LLC & Tax Tools",
+        "shortDescription": "Exact US LLC costs, EIN timelines, IRS deadlines and filing prices for founders worldwide.",
+        "longDescription": "Epics Deals helps founders worldwide form and run US companies. This plugin puts our most-asked answers inside ChatGPT as free, read-only tools, using the same verified figures our team quotes clients: total LLC formation cost in any state ($130 service fee plus the state filing fee, approval time, yearly cost), side-by-side state comparisons, EIN timelines (instant for US residents; 12-18 days for non-residents with no SSN), IRS compliance deadlines with the $25,000 Form 5472 penalty warning, ITIN guidance, and tax filing estimates from $120. No account, no sign-in, no data collected — the tools answer from published fee and deadline data.",
+        "developerName": "Epics Deals",
+        "category": "Business",
+        "capabilities": ["Read"],
+        "websiteURL": "https://epicsdeals.com",
+        "privacyPolicyURL": "https://epicsdeals.com/privacy-policy/",
+        "termsOfServiceURL": "https://epicsdeals.com/terms-of-service/",
+        "defaultPrompt": [
+          "How much does it cost in total to form an LLC in Colorado?",
+          "Compare Wyoming, Delaware and Montana for a non-resident founder.",
+          "I have no SSN — how long will my LLC's EIN take, and what are my IRS deadlines?"
+        ],
+        "brandColor": "#FED716",
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/logo.png"
+      }
+    }
+  }
+}

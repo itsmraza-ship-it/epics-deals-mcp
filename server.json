@@ -1,0 +1,14 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "description": "LLC costs, EIN timelines, IRS deadlines and filing prices for founders forming US companies.",
+  "name": "io.github.itsmraza-ship-it/epics-deals-mcp",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://epics-deals-mcp.epicsdeals.workers.dev/mcp"
+    }
+  ],
+  "title": "Epics Deals \u2014 US LLC & Tax Tools",
+  "version": "1.0.0",
+  "websiteUrl": "https://epicsdeals.com"
+}

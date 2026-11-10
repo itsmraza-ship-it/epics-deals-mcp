@@ -1,0 +1,26 @@
+{
+  "name": "epics-deals-mcp",
+  "version": "1.0.0",
+  "description": "Epics Deals — US LLC & Tax Tools. A remote, stateless MCP server: LLC cost calculator, state comparison, EIN timelines, compliance deadlines, ITIN check, tax filing estimates and the current founder offer.",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/node-server.js",
+    "dev": "node --experimental-strip-types src/node-server.ts",
+    "test:local": "bash scripts/run-local-test.sh"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.21.0",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20251101.0",
+    "@types/node": "^26.6.6",
+    "typescript": "^5.9.0",
+    "wrangler": "^4.158.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

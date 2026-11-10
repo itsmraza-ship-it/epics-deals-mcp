@@ -1,0 +1,9 @@
+name = "epics-deals-mcp"
+main = "dist/worker.js"
+compatibility_date = "2025-10-01"
+workers_dev = true
+
+# Phase 2: bind the production hostname once the Cloudflare account + DNS exist.
+# routes = [
+#   { pattern = "mcp.epicsdeals.com", custom_domain = true }
+# ]
